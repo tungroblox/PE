@@ -1,11 +1,8 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay,
-    CardTitle } from 'reactstrap';
-
-
-
+import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
     function RenderMenuItem ({dish, onClick}) {
+		
         return (
             <Card
                 onClick={() => onClick(dish.id)}>
@@ -15,6 +12,7 @@ import { Card, CardImg, CardImgOverlay,
                 </CardImgOverlay>
             </Card>
         );
+		
     }
 
     const Menu = (props) => {
@@ -34,6 +32,7 @@ import { Card, CardImg, CardImgOverlay,
                 </div>
             </div>
         );
+		
     }
 
 export default Menu;
